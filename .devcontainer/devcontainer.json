@@ -3,7 +3,7 @@
 	"dockerFile": "Dockerfile",
 
 	// Specifies a list of ports the container should publish
-	"appPort": [9000],
+	"appPort": [8000],
 
 	"runArgs": [
 		// Uncomment the next line to run as root instead. Linux users, 

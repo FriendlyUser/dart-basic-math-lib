@@ -1,0 +1,18 @@
+dartdoc:
+  # includeExternal: ['bin/unusually_located_library.dart']
+  linkTo:
+    url: "https://my.dartdocumentationsite.org/dev/%v%"
+  showUndocumentedCategories: true
+  ignore:
+    - ambiguous-doc-reference
+  errors:
+    - unresolved-doc-reference
+  warnings:
+    - tool-error
+  exclude:
+    - /usr/lib/dart/
+    - /usr/lib/dart/lib/core/
+    - /usr/lib/dart/lib
+    - /home/vscode/.pub-cache/hosted/
+    - /usr/lib/dart
+    - /usr/lib/dart/**

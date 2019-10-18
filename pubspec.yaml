@@ -1,6 +1,7 @@
-name: dart
+name: dart-lcg
+description: Simple dart Project to Illustrate how to publish a dart package.
 environment:
-  sdk: '>=2.1.0 <3.0.0'
+  sdk: '>=2.2.0 <3.0.0'
 
-dependencies:
-  args: ^1.5.2
+dev_dependencies:
+  test: ^1.9.2

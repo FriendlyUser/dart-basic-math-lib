@@ -25,4 +25,6 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+# install dependencies for dart
+RUN pub get
 USER $USERNAME
