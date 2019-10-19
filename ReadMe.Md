@@ -1,10 +1,5 @@
-# Basic Dart Docker
+# Dart LCG
 
-Simple Dart Docker Container for vs code, inspired by the other docker repos like `vscode-remote-try-node`.
+Basic linear congruential generator written in dart to get a feel of the dart programming language.
 
-To install run and
-
-```dart
-pub get
-dart helloworld.dart -n ReadMe.Md
-```
+Inspired by SENG475 assignment 1, I tried to adhere to the api specifications in that assignments. 

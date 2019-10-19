@@ -19,6 +19,5 @@ class LCG_Interface {
   void discard(int n) {}
   int min() { return 0;}
   int max() { return 1;}
-  bool operator==(LCG_Interface other) { return (other._a == _a);}
   int currValue() {return 0;}
 }
