@@ -31,6 +31,9 @@ class LCG implements LCG_Interface {
     _xi = _next();
     return _xi;
   } */
+  int currValue() {
+    return _xi;
+  }
   int nextNum() {
     _xi = _next();
     return _xi;
@@ -52,15 +55,9 @@ class LCG implements LCG_Interface {
     return (_a * _xi +_c) % _m;
   }
 
-}
-
-void main() { 
-  LCG cp = new LCG(5,4,3,2); 
-  print(cp.multiplier);
-  print(cp.increment);
-  print(cp.modulus);
-  print(cp.seed);
-  cp.seed = 5;
-  print(cp.seed);
-  print(cp.nextNum());
+  bool operator==(LCG other) {
+    return (other.increment == this.increment &&
+	    other.modulus == this.modulus &&
+	    other.multiplier == this.multiplier);
+  }
 }

@@ -15,22 +15,10 @@ class LCG_Interface {
   //setters
   void set seed(int newSeed) {_seed = newSeed;}
   LCG_Interface(int multiplier, int increment, int modulus, int seed);
-}
-
-abstract class IsSilly {
-  void makePeopleLaugh();
-}
-
-//Abstract class
-class Clown extends IsSilly {   
-  void makePeopleLaugh() {
-    // Here is where the magic happens
-  }
-}
-
-//Interface
-class Comedian implements IsSilly {
-  void makePeopleLaugh() {
-    // Here is where the magic happens
-  }
+  int nextNum() {return 0;}
+  void discard(int n) {}
+  int min() { return 0;}
+  int max() { return 1;}
+  bool operator==(LCG_Interface other) { return (other._a == _a);}
+  int currValue() {return 0;}
 }
