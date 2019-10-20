@@ -25,12 +25,6 @@ class LCG implements LCG_Interface {
         _xi = seedValue;
     }
   }
-
-  // can't get the operators working, skip for dart
-/*   int operator() { 
-    _xi = _next();
-    return _xi;
-  } */
   int currValue() {
     return _xi;
   }
@@ -54,10 +48,6 @@ class LCG implements LCG_Interface {
   int _next() {
     return (_a * _xi +_c) % _m;
   }
-
-  bool operator==(LCG other) => {
-    return (other.increment == this.increment &&
-	    other.modulus == this.modulus &&
-	    other.multiplier == this.multiplier);
-  }
+  @override
+  bool operator==(LCG other) => (other.increment == this.increment && other.modulus == this.modulus && other.multiplier == this.multiplier);
 }

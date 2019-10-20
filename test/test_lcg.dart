@@ -1,5 +1,5 @@
 import "package:test/test.dart"; 
-import "lib/lcg/lcg.dart"; 
+import "../lib/lcg/lcg.dart"; 
 void main() { 
    group("String", () { 
       LCG lcg1 = new LCG(4,2,8,1);
