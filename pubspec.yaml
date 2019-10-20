@@ -1,5 +1,5 @@
-name: dart_lcg
-description: Simple dart Project to Illustrate how to publish a dart package.
+name: dart_simple_math
+description: Simple dart math library for lcg, rational numbers and trig functions.
 author: gfleet.games <studentdavidli@gmail.com>
 homepage: https://github.com
 version: 0.1.2

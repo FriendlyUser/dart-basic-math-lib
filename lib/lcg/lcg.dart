@@ -55,7 +55,7 @@ class LCG implements LCG_Interface {
     return (_a * _xi +_c) % _m;
   }
 
-  bool operator==(LCG other) {
+  bool operator==(LCG other) => {
     return (other.increment == this.increment &&
 	    other.modulus == this.modulus &&
 	    other.multiplier == this.multiplier);
